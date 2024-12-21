@@ -1,0 +1,33 @@
+.advanced-search-page {
+    background-color: #f0f8ff; /* Light blue theme background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.advanced-search-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff; /* Card background */
+    padding: 20px;
+}
+
+.advanced-search-card h3 {
+    color: #007bff; /* Light blue text for the title */
+    font-weight: bold;
+}
+
+.search-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
