@@ -1,10 +1,16 @@
 .custom-navbar {
+    background-color: #2e2e2e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-navbar .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
+    color: #dc3545; /* Red theme color */
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover {
     color: #f8f9fa;
 }
 
@@ -16,24 +22,39 @@
 }
 
 .custom-navbar .nav-link:hover {
-    color: #adb5bd !important;
+    color: #dc3545 !important; /* Red hover effect */
 }
 
 .custom-navbar .search-form input {
     border-radius: 20px;
+    border: 1px solid #dc3545; /* Red border for input field */
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.custom-navbar .search-form input::placeholder {
+    color: #6c757d; /* Subtle placeholder */
 }
 
 .custom-navbar .btn-outline-light {
     border-radius: 20px;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-navbar .btn-outline-light:hover {
+    background-color: #dc3545;
+    color: #f8f9fa;
 }
 
 .custom-navbar .social-icons .nav-link {
     color: #f8f9fa !important;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-left: 10px;
     transition: color 0.3s ease;
 }
 
 .custom-navbar .social-icons .nav-link:hover {
-    color: #adb5bd !important;
+    color: #dc3545 !important; /* Red hover effect for social icons */
 }
