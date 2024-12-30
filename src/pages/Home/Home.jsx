@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import properties from '../data/properties';
-import testimonials from './Testimonials.js';
+import properties from '../../data/properties';
+import testimonials from '../Testimonials.js';
 import './Home.css'; // Import custom CSS
 
 const Home = () => {
