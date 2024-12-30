@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 
 const teamMembers = [

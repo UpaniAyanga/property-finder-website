@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import './Footer.css'; // Import custom CSS
 
