@@ -12,17 +12,17 @@ const Home = () => {
         <div>
             <div className="hero-section">
                 <Container className="text-center text-white">
-                    <h1>Welcome to Real Estate</h1>
-                    <p>Your dream home awaits. Discover a place you'll love to live.</p>
-                    <Button as={Link} to="/properties" variant="primary" size="lg">View All Properties</Button>
+                    <h1>Welcome to Perfect Estate</h1>
+                    <p>Your dream home awaits. Discover a place you will love to live.</p>
+                    <Button as={Link} to="/properties" variant="danger" size="lg" className="m-2">View All Properties</Button>
                 </Container>
             </div>
 
             <Container className="my-5">
                 <Row className="text-center mb-4">
                     <Col>
-                        <h2>Find Your Perfect Home</h2>
-                        <p>We offer a wide range of properties to suit your needs and budget. Whether you are looking for a luxurious villa, a modern apartment, or a cozy cottage, we have something for everyone.</p>
+                        <h2>Turn your House into a Home</h2>
+                        <p>We offer a diverse selection of properties tailored to fit your preferences and budget. Whether you're seeking a luxurious villa, a sleek modern apartment, or a charming cottage, we have the perfect home waiting for you!</p>
                     </Col>
                 </Row>
 
@@ -37,7 +37,7 @@ const Home = () => {
                                         <Card.Body>
                                             <Card.Title>{property.title}</Card.Title>
                                             <Card.Text>{property.description}</Card.Text>
-                                            <Button as={Link} to={`/properties/${property.id}`} variant="primary">More Details</Button>
+                                            <Button as={Link} to={`/properties/${property.id}`} variant="outline-primary">More Details</Button>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -54,7 +54,6 @@ const Home = () => {
                                 <Carousel.Item key={index}>
                                     <Card className="text-center">
                                         <Card.Body>
-                                            <Card.Img variant="top" src={testimonial.image} className="rounded-circle w-25 mb-3" />
                                             <Card.Text className="blockquote mb-0">
                                                 "{testimonial.feedback}"
                                             </Card.Text>
