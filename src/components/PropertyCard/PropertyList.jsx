@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import PropertyCard from './PropertyCard';
-import properties from '../data/properties';
+import propertiesData from '../../data/properties.json'; // Import the properties JSON
 
 const PropertyList = () => (
     <Container>
         <Row>
-            {properties.map(property => (
+            {propertiesData.properties.map(property => ( // Access the properties array inside the JSON
                 <Col key={property.id} sm={12} md={6} lg={4}>
                     <PropertyCard property={property} />
                 </Col>

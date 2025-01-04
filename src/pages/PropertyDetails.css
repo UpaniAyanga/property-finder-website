@@ -1,0 +1,12 @@
+.property-details .bg-light-grey {
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 0 0 8px 8px;
+}
+
+.property-details .text-danger {
+    color: #d9534f; /* Red theme */
+}
+
+.property-details .text-muted {
+    color: #6c757d; /* Grey text */
+}

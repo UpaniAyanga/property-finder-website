@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import properties from '../../data/properties';
+import properties from '../../data/properties.json'; // Import JSON file
 import testimonials from '../Testimonials.js';
 import './Home.css'; // Import custom CSS
 
 const Home = () => {
-    const featuredProperties = properties.slice(0, 3); // Select first 3 properties as featured
+    const featuredProperties = properties.properties.slice(0, 3);
 
     return (
         <div>
@@ -33,10 +33,10 @@ const Home = () => {
                             {featuredProperties.map(property => (
                                 <Col key={property.id} sm={12} md={6} lg={4} className="mb-4">
                                     <Card className="property-card">
-                                        <Card.Img variant="top" src={property.image} />
+                                        <Card.Img variant="top" src={property.picture} />
                                         <Card.Body>
                                             <Card.Title>{property.title}</Card.Title>
-                                            <Card.Text>{property.description}</Card.Text>
+                                            <Card.Text>{property.shortDescription}</Card.Text>
                                             <Button as={Link} to={`/properties/${property.id}`} variant="outline-primary">More Details</Button>
                                         </Card.Body>
                                     </Card>
@@ -55,7 +55,7 @@ const Home = () => {
                                     <Card className="text-center">
                                         <Card.Body>
                                             <Card.Text className="blockquote mb-0">
-                                                "{testimonial.feedback}"
+                                                &#34;{testimonial.feedback}&#34;
                                             </Card.Text>
                                             <footer className="blockquote-footer mt-2">{testimonial.name}</footer>
                                         </Card.Body>

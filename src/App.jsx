@@ -6,6 +6,7 @@ import Home from './pages/Home/Home.jsx';
 import About from './pages/About';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
+import FavouriteOption from './pages/FavouriteOption';
 import PropertyDetails from './pages/PropertyDetails';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,6 +20,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/properties" element={<Properties />} />
+                        <Route path="/favourites" element={<FavouriteOption />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/properties/:id" element={<PropertyDetails />} />
                     </Routes>

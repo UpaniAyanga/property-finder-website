@@ -1,5 +1,5 @@
 .hero-section {
-    background: url('../../assets/images/realEstate.jpg') no-repeat center center;
+    background: url('../../../public/images/realEstate.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 100px 0;
