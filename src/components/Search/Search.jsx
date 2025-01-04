@@ -1,119 +1,113 @@
-import  { useState } from 'react';
-import { DropdownList, NumberPicker, DatePicker } from 'react-widgets';
-import 'react-widgets/styles.css';
+import { useState } from "react";
+import { Form } from "react-bootstrap";
+import { DropdownList } from "react-widgets";
+import "react-widgets/styles.css";
 
 const AdvancedSearchFilter = ({ onFilter }) => {
-    const [filters, setFilters] = useState({
-        type: '',
-        minPrice: null,
-        maxPrice: null,
-        minBedrooms: null,
-        maxBedrooms: null,
-        dateAdded: null,
-        postcode: '',
-    });
+  const [filters, setFilters] = useState({
+    minPrice: "",
+    maxPrice: "",
+    bedroom: "",
+    bathroom: "",
+    added: "",
+    location: "",
+    propertyType: "",
+  });
 
-    const handleInputChange = (name, value) => {
-        setFilters({ ...filters, [name]: value });
-    };
+  const handleInputChange = (name, value) => {
+    setFilters({ ...filters, [name]: value });
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        onFilter(filters); // Pass filters to parent
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onFilter(filters); // Pass filters to parent
+  };
 
-    const propertyTypes = ['Any', 'House', 'Flat']; // Example dropdown values
+  const propertyTypes = ["Any", "House", "Flat"];
 
-    return (
-        <form className="mb-5" onSubmit={handleSubmit}>
-            <div className="row g-3">
-                <div className="col-md-4">
-                    <label htmlFor="type" className="form-label">
-                        Property Type
-                    </label>
-                    <DropdownList
-                        data={propertyTypes}
-                        value={filters.type || 'Any'}
-                        onChange={(value) => handleInputChange('type', value === 'Any' ? '' : value)}
-                    />
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="minPrice" className="form-label">
-                        Min Price
-                    </label>
-                    <NumberPicker
-                        placeholder="Enter minimum price"
-                        value={filters.minPrice}
-                        onChange={(value) => handleInputChange('minPrice', value)}
-                        min={0}
-                    />
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="maxPrice" className="form-label">
-                        Max Price
-                    </label>
-                    <NumberPicker
-                        placeholder="Enter maximum price"
-                        value={filters.maxPrice}
-                        onChange={(value) => handleInputChange('maxPrice', value)}
-                        min={0}
-                    />
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="minBedrooms" className="form-label">
-                        Min Bedrooms
-                    </label>
-                    <NumberPicker
-                        placeholder="Enter minimum bedrooms"
-                        value={filters.minBedrooms}
-                        onChange={(value) => handleInputChange('minBedrooms', value)}
-                        min={0}
-                    />
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="maxBedrooms" className="form-label">
-                        Max Bedrooms
-                    </label>
-                    <NumberPicker
-                        placeholder="Enter maximum bedrooms"
-                        value={filters.maxBedrooms}
-                        onChange={(value) => handleInputChange('maxBedrooms', value)}
-                        min={0}
-                    />
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="dateAdded" className="form-label">
-                        Date Added
-                    </label>
-                    <DatePicker
-                        value={filters.dateAdded}
-                        onChange={(value) => handleInputChange('dateAdded', value)}
-                        placeholder="Select a date"
-                    />
-                </div>
-                <div className="col-md-4">
-                    <label htmlFor="postcode" className="form-label">
-                        Postcode Area
-                    </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="e.g., BR1, NW1"
-                        name="postcode"
-                        value={filters.postcode}
-                        onChange={(e) => handleInputChange('postcode', e.target.value)}
-                    />
-                </div>
-            </div>
-            <div className="row mt-4">
-                <div className="col d-flex justify-content-center">
-                    <button className="btn btn-danger" type="submit">
-                        Search Property
-                    </button>
-                </div>
-            </div>
-        </form>
-    );
+  return (
+    <form className="mb-5" onSubmit={handleSubmit}>
+      <div className="row g-3">
+        <div className="col-md-4">
+          <label htmlFor="type" className="form-label">
+            Property Type
+          </label>
+          <DropdownList
+            data={propertyTypes}
+            value={filters.propertyType || "Any"}
+            onChange={(value) =>
+              handleInputChange("propertyType", value === "Any" ? "" : value)
+            }
+          />
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="minPrice" className="form-label">
+            Min Price
+          </label>
+          <Form.Control
+            type="minPrice"
+            value={filters.minPrice}
+            name="minPrice"
+            onChange={(e) => handleInputChange("minPrice", e.target.value)}
+          />
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="maxPrice" className="form-label">
+            Max Price
+          </label>
+          <Form.Control
+            type="maxPrice"
+            value={filters.maxPrice}
+            name="maxPrice"
+            onChange={(e) => handleInputChange("maxPrice", e.target.value)}
+          />
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="bedrrom" className="form-label">
+            Bedrooms
+          </label>
+          <Form.Control
+            type="bedroom"
+            value={filters.bedroom}
+            name="bedroom"
+            onChange={(e) => handleInputChange("bedroom", e.target.value)}
+          />
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="added" className="form-label">
+            Date Added
+          </label>
+
+          <Form.Control
+            type="date"
+            value={filters.added}
+            name="added"
+            onChange={(e) => handleInputChange("added", e.target.value)}
+          />
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="location" className="form-label">
+            Location
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="e.g. London, BR1, NW1"
+            name="location"
+            value={filters.location}
+            onChange={(e) => handleInputChange("location", e.target.value)}
+          />
+        </div>
+      </div>
+      <div className="row mt-4">
+        <div className="col d-flex justify-content-center">
+          <button className="btn btn-danger" type="submit">
+            Search Property
+          </button>
+        </div>
+      </div>
+    </form>
+  );
 };
 
 export default AdvancedSearchFilter;

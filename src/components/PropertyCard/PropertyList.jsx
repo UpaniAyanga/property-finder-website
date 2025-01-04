@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import PropertyCard from './PropertyCard';
-import propertiesData from '../../data/properties.json'; // Import the properties JSON
+import propertiesData from '../../../public/data/properties.json'; // Import the properties JSON
 
 const PropertyList = () => (
     <Container>
