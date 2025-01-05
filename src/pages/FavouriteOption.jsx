@@ -1,19 +1,8 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
 
 const FavouriteOption = ({ favorites, setFavorites }) => {
     const [isDraggingOverFavorites, setIsDraggingOverFavorites] = useState(false);
-
-    useEffect(() => {
-        // Ensure favorites are updated from localStorage
-        const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
-        setFavorites(storedFavorites);
-    }, [setFavorites]);
-
-    useEffect(() => {
-        // Save favorites to localStorage whenever they change
-        localStorage.setItem("favorites", JSON.stringify(favorites));
-    }, [favorites]);
 
     const allowDrop = (e) => {
         e.preventDefault();
@@ -32,16 +21,12 @@ const FavouriteOption = ({ favorites, setFavorites }) => {
         setFavorites((prevFavorites) =>
             prevFavorites.filter((fav) => fav.id !== propertyId)
         );
+        localStorage.removeItem(propertyId);
     };
 
     const handleDragOut = (e, propertyId) => {
         e.dataTransfer.setData("removeProperty", propertyId);
-    };
-
-    const handleDragOutDrop = (e) => {
-        e.preventDefault();
-        const propertyId = e.dataTransfer.getData("removeProperty");
-        handleRemove(propertyId);
+        localStorage.removeItem(propertyId);
     };
 
     return (
