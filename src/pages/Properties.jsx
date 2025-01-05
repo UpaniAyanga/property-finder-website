@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import AdvancedSearchFilter from "../components/Search/Search.jsx";
 import FavouriteOption from "./FavouriteOption.jsx";
 import propertiesData from "../../public/data/properties.json";
-import { FaHeart, FaRegHeart } from "react-icons/fa"; // Import favorite icons
+import { FaHeart, FaRegHeart } from "react-icons/fa";
+import NoPropertiesFound from "./NoPropertyFound.jsx"; // Import favorite icons
 
 const Properties = () => {
   const [filteredProperties, setFilteredProperties] = useState(
@@ -118,44 +119,50 @@ const Properties = () => {
         <Row>
           <Col md={8}>
             <Row>
-              {filteredProperties.map((property) => (
-                  <Col key={property.id} sm={12} md={6} lg={4} className="mb-4">
-                    <Card
-                        className="property-card"
-                        draggable
-                        onDragStart={(e) => handleDragStart(e, property)}
-                        style={{ cursor: "grab" }}
-                    >
-                      <Card.Img variant="top" src={property.picture} />
-                      <Card.Body>
-                        <Card.Title>{property.title}</Card.Title>
-                        <Card.Text>{property.shortDescription}</Card.Text>
-                        <div className="d-flex align-items-center justify-content-between">
-                          <Button
-                              as={Link}
-                              to={`/properties/${property.id}`}
-                              variant="outline-danger"
-                              className="mx-auto"
-                              style={{ display: "block" }}
-                          >
-                            More Details
-                          </Button>
-                          <Button
-                              variant="link"
-                              onClick={() => toggleFavorite(property)}
-                              className="ms-2"
-                          >
-                            {isFavorite(property) ? (
-                                <FaHeart className="text-danger" size={15} />
-                            ) : (
-                                <FaRegHeart className="text-muted" size={15} />
-                            )}
-                          </Button>
-                        </div>
-                      </Card.Body>
-                    </Card>
+              {filteredProperties.length > 0 ? (
+                  filteredProperties.map((property) => (
+                      <Col key={property.id} sm={12} md={6} lg={4} className="mb-4">
+                        <Card
+                            className="property-card"
+                            draggable
+                            onDragStart={(e) => handleDragStart(e, property)}
+                            style={{ cursor: "grab" }}
+                        >
+                          <Card.Img variant="top" src={property.picture} />
+                          <Card.Body>
+                            <Card.Title>{property.title}</Card.Title>
+                            <Card.Text>{property.shortDescription}</Card.Text>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <Button
+                                  as={Link}
+                                  to={`/properties/${property.id}`}
+                                  variant="outline-danger"
+                                  className="mx-auto"
+                                  style={{ display: "block" }}
+                              >
+                                More Details
+                              </Button>
+                              <Button
+                                  variant="link"
+                                  onClick={() => toggleFavorite(property)}
+                                  className="ms-2"
+                              >
+                                {isFavorite(property) ? (
+                                    <FaHeart className="text-danger" size={15} />
+                                ) : (
+                                    <FaRegHeart className="text-muted" size={15} />
+                                )}
+                              </Button>
+                            </div>
+                          </Card.Body>
+                        </Card>
+                      </Col>
+                  ))
+              ) : (
+                  <Col>
+                    <NoPropertiesFound />
                   </Col>
-              ))}
+              )}
             </Row>
           </Col>
           <Col md={4}>
