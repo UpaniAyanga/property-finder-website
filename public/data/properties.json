@@ -1,0 +1,259 @@
+{
+    "properties": [
+      {
+        "id": "1",
+        "title": "New York Heart City Apartment",
+        "type": "Apartment",
+        "price": 500000,
+        "location": "New York",
+        "shortDescription": "A cozy apartment in the heart of the city",
+        "description": "A Stunning freehold house of 13,067 square feet within the iconic Chelsea Barracks development. Arranged across seven floors, with a total area of 13,067 sq. ft. (1,214 sq. m.) this beautiful seven-bedroom residence is unrivalled in scale. With a generous width of 10 metres, in comparison to the traditional 6 metres of old, rooms are as broad as they are deep offering exceptional space to entertain or enjoy as a family. Beyond the elegant proportions and extravagant spaces, 6 Whistler Square encompasses the necessities and luxuries of modern living on a scale almost unprecedented for a London home. Unwind in the private spa, with a swimming pool, steam and sauna, workout in the gym, take the family to the movies in the home cinema or enjoy your personal collection from the wine room with guests on the roof terrace. As part of the Estate, access to the world-class amenity offering within Chelsea Barracks is included comprising of a Spa, fully equipped gym, business suite with two boardrooms, residents lounge, cinema, billiards room, 24-hour concierge, lifestyle, and security services.",
+        "picture": "https://media.rightmove.co.uk/283k/282893/156459713/282893_NUT240175_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_07_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/227k/226316/151938803/226316_PLD240037_FLP_00_0000.jpeg",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "added": {
+          "month": "October",
+          "day": 12,
+          "year": 2022
+        },
+        "propertyType": "house"
+      },
+      {
+        "id": "2",
+        "title": "A Stunning 5 Bedroom House",
+        "picture": "https://media.rightmove.co.uk/52k/51625/156487040/51625_LIN230614_L_IMG_00_0000.jpeg",
+        "bedroom": "5",
+        "bathroom": "3",
+        "shortDescription": "A Stunning 5 Bedroom House in the inner side",
+        "price": 3000000,
+        "location": "Amhurst Road, Stoke Newington, N16",
+        "type": "House",
+        "tenure": "Share of Freehold",
+        "description": "A substantial (c. 3550 sqft) Victorian Freehold, which retains plenty of original detail, with accommodation arranged over five levels with a vast secluded rear garden, set in the heart of Stoke Newington. Accommodation is well balanced and generously proportioned; comprising; a vast entrance hallway, retaining original details which include original coving and corbels, which leads to the fabulous, formal dual reception space that retains a wealth of original features which include, fireplaces, original double doors that separate the rooms, coving and ceiling roses. The space unexpectedly fans out to the rear, offering a real sense of light and volume. The lower level houses the kitchen/dining space, which is perfect for hosting, and leads via the rear conservatory to the vast rear garden, which is secluded courtesy of the mature trees at the rear. There is also a large bathroom at the rear of the lower level with a study on top, at the rear of the raised ground floor. There are two double bedrooms on the first floor, with a family bathroom suite at the rear, with an additional two double bedrooms on the second floor, which provides access to the large roof terrace at the rear. An exceptional space occupies the top floor, which is currently utilised as a large home office, but could easily be converted to an exceptional principal suite, with jaw dropping City scape views from the rear, that must be viewed to be appreciated. Brilliantly positioned in the heart of Hackney, in between Stoke Newington & Dalston, an area full of interesting places to eat and drink, including the authentic Ridley Road market, roof top bars, brasseries and even an independent cinema. Also within walking distance to London Fields. For transport links Dalston Junction and Dalston Kingsland Overground stations are only moments away, taking you into Shoreditch and central London in minutes, with a vast array of buses which are available on Kingsland Road taking you into the City.",
+        "url": "properties/prop1.html",
+        "added": {
+          "month": "January",
+          "day": 10,
+          "year": 2023
+        },
+        "images": [
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_00_0000.jpeg",
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_IMG_06_0000.jpeg"
+        ],
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "floorplan": "https://media.rightmove.co.uk/35k/34194/156453638/34194_HEA245530_FLP_00_0000.jpeg",
+        "propertyType": "flat"
+      },
+      {
+        "id": "3",
+        "title": "Seaside Mansion in Malibu",
+        "type": "House",
+        "price": 12500000,
+        "location": "Malibu, California",
+        "shortDescription": "A spectacular mansion with breathtaking ocean views",
+        "description": "This incredible Malibu mansion is a once-in-a-lifetime opportunity to own a piece of paradise. Nestled along the pristine coastline, this sprawling estate covers an area of 25,000 square feet, offering panoramic views of the Pacific Ocean. The main house boasts 8 bedrooms, 10 bathrooms, and multiple living spaces spread across three levels. The interior is a masterpiece, featuring high ceilings, grand staircases, and custom finishes throughout. The expansive gourmet kitchen is ideal for entertaining, while the adjoining dining room offers the perfect spot for sunset dinners with family and friends. The master suite is nothing short of extraordinary, with a private terrace overlooking the beach, a luxurious en-suite bath, and an enormous walk-in closet. Outside, the resort-style amenities include a heated infinity pool, hot tub, full outdoor kitchen, and a private movie theater. With over 3 acres of manicured grounds, including tennis courts, a wine cellar, and staff quarters, this estate offers the ultimate luxury living experience.",
+        "picture": "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/41k/40454/152454182/40454_ILM240186_IMG_07_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/37k/36248/153526127/36248_NTS240228_FLP_00_0000.jpeg",
+        "latitude": 34.0226,
+        "longitude": -118.7798,
+        "added": {
+          "month": "June",
+          "day": 15,
+          "year": 2024
+        },
+        "propertyType": "house"
+      },
+      {
+        "id": "4",
+        "title": "Modern Penthouse in Manhattan",
+        "type": "Apartment",
+        "price": 5000000,
+        "location": "New York City, Manhattan",
+        "shortDescription": "Luxurious penthouse with stunning city views",
+        "description": "This modern penthouse offers the best in city living with its expansive floor plan, exceptional finishes, and unobstructed views of the Manhattan skyline. Spanning over 4,000 square feet, this incredible home features 4 bedrooms, 5 bathrooms, and an open-concept living space that includes a large living room, dining area, and kitchen, all with floor-to-ceiling windows offering stunning views of Central Park and beyond. The kitchen is a chef's dream, outfitted with top-of-the-line appliances, custom cabinetry, and an oversized island perfect for entertaining. The master suite offers its own private terrace, a spacious walk-in closet, and an en-suite bathroom with a soaking tub and separate shower. In addition to the lavish interior, the building offers world-class amenities, including a 24-hour concierge, fitness center, rooftop lounge, and private parking. Located in one of the most prestigious areas of Manhattan, this penthouse is a rare opportunity to own a slice of the city's finest living.",
+        "picture": "https://media.rightmove.co.uk/189k/188168/86859489/188168_206057023_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_08_0000.jpeg",
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_07_0000.jpeg",
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_11_0000.jpeg",
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_12_0000.jpeg",
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_13_0000.jpeg",
+          "https://media.rightmove.co.uk/255k/254804/153225455/254804_691361_IMG_16_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/272k/272k/30121234/30121234_FLP_00_0000.jpeg",
+        "latitude": 40.7831,
+        "longitude": -73.9712,
+        "added": {
+          "month": "July",
+          "day": 1,
+          "year": 2024
+        },
+        "propertyType": "apartment"
+      },
+      {
+        "id": "5",
+        "title": "Charming Country Estate in Tuscany",
+        "type": "House",
+        "price": 8500000,
+        "location": "Tuscany, Italy",
+        "shortDescription": "A luxurious country home in the heart of Tuscany",
+        "description": "Set amidst rolling hills and lush vineyards, this stunning Tuscan estate offers unparalleled privacy, rustic charm, and modern luxury. The main villa, a beautifully restored 16th-century farmhouse, spans over 12,000 square feet and includes 6 bedrooms, 7 bathrooms, and an array of living spaces designed for relaxation and entertaining. The home's antique stone floors, wood beams, and original fireplaces retain the character of the past while seamlessly integrating with modern amenities such as a chef's kitchen, home theater, and state-of-the-art wine cellar. Outside, the property includes 10 acres of olive groves, a heated swimming pool, and a spacious outdoor lounge with panoramic views of the surrounding countryside. The estate also features a guest house, a private chapel, and extensive grounds with manicured gardens, walking trails, and fountains. With its proximity to Florence and Siena, this estate is ideal for those seeking an authentic Italian retreat with all the comforts of a luxury home.",
+        "picture": "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/53k/52934/156230474/52934_CPW240673_IMG_13_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/272k/272k/30121245/30121245_FLP_00_0000.jpeg",
+        "latitude": 43.7708,
+        "longitude": 11.2547,
+        "added": {
+          "month": "May",
+          "day": 3,
+          "year": 2024
+        },
+        "propertyType": "house"
+      },
+      {
+        "id": "6",
+        "title": "Beautiful Royal Castle in Scotland",
+        "type": "Castle",
+        "price": 15000000,
+        "location": "Scotland, UK",
+        "shortDescription": "A magnificent castle steeped in history and luxury",
+        "description": "This historic Scottish castle offers a once-in-a-lifetime opportunity to own a piece of history. Set on 50 acres of land with stunning views of the Scottish Highlands, the castle itself spans over 20,000 square feet and has been meticulously restored to preserve its medieval charm while incorporating modern comforts. The property includes 10 bedrooms, 12 bathrooms, multiple grand reception rooms, a formal dining room, and a chef’s kitchen, all designed to make the most of the incredible views. The master suite is truly fit for royalty, with a private balcony, a sitting area, and an expansive en-suite bathroom with a jacuzzi tub and sauna. The grounds of the castle are just as impressive, with a series of beautifully landscaped gardens, a private lake, a tennis court, and a full-size equestrian stable. Additional features include a wine cellar, a home theater, and a billiards room, making this estate the ultimate in luxury living. Perfect for those seeking a historic retreat or a lavish family home.",
+        "picture": "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/90k/89431/153281189/89431_2105_IMG_07_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/272k/272k/30121267/30121267_FLP_00_0000.jpeg",
+        "latitude": 56.4907,
+        "longitude": -4.2026,
+        "added": {
+          "month": "August",
+          "day": 20,
+          "year": 2024
+        },
+        "propertyType": "castle"
+      },
+      {
+        "id": "7",
+        "title": "Opulent Chateau in Bordeaux",
+        "type": "House",
+        "price": 9500000,
+        "location": "Bordeaux, France",
+        "shortDescription": "An exquisite chateau surrounded by vineyards",
+        "description": "This opulent chateau, set amidst the renowned vineyards of Bordeaux, combines the finest in French luxury living with the timeless elegance of a historic château. The main building spans over 15,000 square feet, including 7 bedrooms, 9 bathrooms, a grand salon, a formal dining room, and a stunning library. The kitchen, a chef’s dream, features top-of-the-line appliances and expansive marble countertops. The master suite, with its panoramic views of the vineyards, includes a private terrace, a sitting area, and an en-suite bathroom with a soaking tub and separate shower. The chateau also features a state-of-the-art wine cellar, an outdoor kitchen, and an infinity pool that overlooks the sprawling estate. The grounds include lush gardens, a tennis court, and a private vineyard where you can harvest your own grapes. Perfectly situated just outside the charming town of Bordeaux, this château offers an unmatched living experience in one of France’s most coveted locations.",
+        "picture": "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076876/143549_ALN240186_IMG_07_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/272k/272k/30121345/30121345_FLP_00_0000.jpeg",
+        "latitude": 44.8378,
+        "longitude": -0.5792,
+        "added": {
+          "month": "September",
+          "day": 10,
+          "year": 2024
+        },
+        "propertyType": "house"
+      },
+      {
+        "id": "8",
+        "title": "Luxury Villa in Dubai",
+        "type": "Villa",
+        "price": 8000000,
+        "location": "Dubai, UAE",
+        "shortDescription": "A lavish villa with stunning views of the city and ocean in center of dubai",
+        "description": "Situated in the heart of Dubai's most prestigious neighborhood, this luxury villa offers both privacy and unparalleled access to the city’s vibrant culture and entertainment. With 10,000 square feet of opulent living space, this villa features 6 bedrooms, 7 bathrooms, and expansive living and dining areas designed for both intimate gatherings and large-scale entertaining. The floor-to-ceiling windows offer stunning views of both the city skyline and the crystal-clear waters of the Persian Gulf. The gourmet kitchen is equipped with state-of-the-art appliances, while the master suite boasts a private balcony, a spa-inspired bathroom, and a massive walk-in closet. The outdoor space is just as impressive, with a private pool, lush gardens, and an outdoor dining area perfect for enjoying the year-round sunshine. Additional features include a home theater, a gym, a wine cellar, and 24-hour concierge service. Whether you are looking for a primary residence or a vacation getaway, this villa provides the ultimate in luxury living.",
+        "picture": "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/156289400/143549_ALN240274_IMG_07_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/272k/272k/30121456/30121456_FLP_00_0000.jpeg",
+        "latitude": 25.276987,
+        "longitude": 55.296249,
+        "added": {
+          "month": "October",
+          "day": 5,
+          "year": 2024
+        },
+        "propertyType": "villa"
+      },
+      {
+        "id": "9",
+        "title": "Tranquil Villa in Napa Valley",
+        "type": "Villa",
+        "price": 4500000,
+        "location": "Napa Valley, California, USA",
+        "shortDescription": "A serene villa in heart of Napa Valley's wine country",
+        "description": "Escape to the picturesque Napa Valley with this breathtaking villa located amidst rolling vineyards and lush landscapes. This 7,000-square-foot property combines rustic charm with modern luxury. The villa features 5 spacious bedrooms, 6 bathrooms, and a grand open-concept living area with vaulted ceilings and floor-to-ceiling windows. The gourmet kitchen is equipped with professional-grade appliances, granite countertops, and custom cabinetry. The master suite offers a private balcony overlooking the vineyard, a spa-like bathroom with a freestanding tub, and a walk-in closet. Outdoor amenities include a stunning infinity pool, a hot tub, an outdoor kitchen, and multiple lounging areas to take in the valley’s beauty. The property also boasts a private wine cellar, a cozy library, and a home theater. With easy access to Napa Valley's renowned wineries and restaurants, this villa offers a perfect blend of seclusion and luxury for wine enthusiasts and nature lovers alike.",
+        "picture": "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_00_0000.jpeg",
+        "images": [
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_01_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_04_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_03_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_02_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_05_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_06_0000.jpeg",
+          "https://media.rightmove.co.uk/144k/143549/151076801/143549_ALN240183_IMG_07_0000.jpeg"
+        ],
+        "floorplan": "https://media.rightmove.co.uk/282k/282k/30221457/30221457_FLP_00_0000.jpeg",
+        "latitude": 38.5025,
+        "longitude": -122.2654,
+        "added": {
+          "month": "December",
+          "day": 10,
+          "year": 2024
+        },
+        "propertyType": "villa"
+      }
+    ]
+  }
