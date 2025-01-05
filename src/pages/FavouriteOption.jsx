@@ -21,7 +21,7 @@ const FavouriteOption = ({ favorites, setFavorites }) => {
         setFavorites((prevFavorites) =>
             prevFavorites.filter((fav) => fav.id !== propertyId)
         );
-        localStorage.removeItem(propertyId);
+        localStorage.setItem(favorites);
     };
 
     const handleDragOut = (e, propertyId) => {
