@@ -2,12 +2,17 @@ import { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const Contact = () => {
+    // State to hold form data
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
     });
 
+    /**
+     * Handles the change in form inputs and updates state accordingly.
+     * @param {Object} e - The event object from form input change.
+     */
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -16,14 +21,23 @@ const Contact = () => {
         });
     };
 
+    /**
+     * Handles form submission by logging the form data and resetting the form.
+     * @param {Object} e - The event object from form submission.
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form data submitted:', formData);
+
+        // Reset form data after submission
         setFormData({
             name: '',
             email: '',
             message: ''
         });
+
+        // Mailto link to send the message to the given email
+        const mailtoLink = `mailto:upani.20223235@iit.ac.lk?subject=Contact Form Submission&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`;
+        window.location.href = mailtoLink; // Opens the default mail client
     };
 
     return (
@@ -38,7 +52,7 @@ const Contact = () => {
             </Row>
 
             <Row className="justify-content-center">
-                {/* Contact Details */}
+                {/* Contact Details Section */}
                 <Col md={5} className="mb-4">
                     <div
                         className="p-4 rounded"
@@ -57,7 +71,7 @@ const Contact = () => {
                     </div>
                 </Col>
 
-                {/* Contact Form */}
+                {/* Contact Form Section */}
                 <Col md={5}>
                     <div
                         className="p-4 rounded"

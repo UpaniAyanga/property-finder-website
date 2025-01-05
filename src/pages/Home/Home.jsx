@@ -4,7 +4,13 @@ import { Link } from 'react-router-dom';
 import properties from '../../../public/data/properties.json'; // Import JSON file
 import './Home.css'; // Import custom CSS
 
+/**
+ * Home component displays the homepage with a hero section and featured properties.
+ * @component
+ * @returns {JSX.Element} The rendered Home component.
+ */
 const Home = () => {
+    // Get the first 3 properties to display as featured properties
     const featuredProperties = properties.properties.slice(0, 3);
 
     return (

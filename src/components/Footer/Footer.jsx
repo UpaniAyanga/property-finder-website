@@ -1,8 +1,14 @@
 import 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import './Footer.css'; // Import custom CSS
+import './Footer.css';
+import {Link} from "react-router-dom";
 
+/**
+ * Footer component displays the footer section of the website with various informational sections and social media links.
+ * @component
+ * @returns {JSX.Element} The rendered Footer component.
+ */
 const Footer = () => (
     <footer className="footer bg-grey text-light mt-5 p-4">
         <Container>
@@ -18,14 +24,15 @@ const Footer = () => (
                     <h5>Contact Us</h5>
                     <p>123 Real Estate St, City, Country</p>
                     <p>Phone: +1 (234) 567-890</p>
-                    <p>Email: <a href="mailto:info@realestate.com" className="text-light">info@realestate.com</a></p>
+                    <p>Email: <a href="mailto:upani.20223235@iit.ac.lk" className="text-light">upani.20223235@iit.ac.lk</a></p>
                 </Col>
                 <Col md={3} className="mb-4">
                     <h5>Quick Links</h5>
                     <ul className="list-unstyled">
-                        <li><a href="#" className="text-light">Home</a></li>
-                        <li><a href="#" className="text-light">Properties</a></li>
-                        <li><a href="#" className="text-light">Contact</a></li>
+                        {/* Using React Router Link for navigation */}
+                        <li><Link to="/" className="text-light">Home</Link></li>
+                        <li><Link to="/properties" className="text-light">Properties</Link></li>
+                        <li><Link to="/contact" className="text-light">Contact</Link></li>
                     </ul>
                 </Col>
                 <Col md={3} className="mb-4">

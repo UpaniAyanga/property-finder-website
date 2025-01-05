@@ -10,6 +10,12 @@ import PropertyDetails from './pages/PropertyDetails';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NoPropertiesFound from "./pages/NoPropertyFound.jsx";
+
+/**
+ * App component sets up the main application structure with routing.
+ * @component
+ * @returns {JSX.Element} The rendered App component.
+ */
 function App() {
     return (
         <Router>

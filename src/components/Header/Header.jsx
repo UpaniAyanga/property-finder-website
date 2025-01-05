@@ -3,6 +3,11 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
+/**
+ * NavigationBar component displays the navigation bar with links to different sections of the website.
+ * @component
+ * @returns {JSX.Element} The rendered NavigationBar component.
+ */
 const NavigationBar = () => (
     <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
         <Container>
