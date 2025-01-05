@@ -23,7 +23,7 @@ const AdvancedSearchFilter = ({ onFilter }) => {
     onFilter(filters); // Pass filters to parent
   };
 
-  const propertyTypes = ["Any", "House", "Flat"];
+  const propertyTypes = ["Any", "House", "Flat", "Apartment"];
 
   return (
     <form className="mb-5" onSubmit={handleSubmit}>

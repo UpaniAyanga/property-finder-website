@@ -20,7 +20,7 @@ import NoPropertiesFound from "./NoPropertyFound.jsx";
 const PropertyDetails = () => {
   const { id } = useParams();
   const [property, setProperty] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(""); // For selecting the main image
+  const [selectedImage, setSelectedImage] = useState("");
   const [showMore, setShowMore] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -103,6 +103,24 @@ const PropertyDetails = () => {
                 </Card.Body>
               </Card>
             </Tab>
+            <Tab eventKey="details" title="Details">
+              <Card className="shadow-sm border-0 bg-light">
+                <Card.Body>
+                  <p className="text-start text-muted">
+                    <strong className="text-danger">Price:</strong> <span className="text-dark">${property.price}</span>
+                  </p>
+                  <p className="text-start text-muted">
+                    <strong className="text-danger">Bedrooms:</strong> <span className="text-dark">{property.bedroom}</span>
+                  </p>
+                  <p className="text-start text-muted">
+                    <strong className="text-danger">Bathrooms:</strong> <span className="text-dark">{property.bathroom}</span>
+                  </p>
+                  <p className="text-start text-muted">
+                    <strong className="text-danger">Location:</strong> <span className="text-dark">{property.location} </span>
+                  </p>
+                </Card.Body>
+              </Card>
+            </Tab>
             <Tab eventKey="floorplan" title="Floor Plan">
               <Card className="shadow-sm">
                 <Card.Body>
@@ -127,7 +145,7 @@ const PropertyDetails = () => {
               </Card>
               <Modal show={showModal} onHide={handleClose} size="lg">
                 <Modal.Header closeButton>
-                  <Modal.Title>Floor Plan</Modal.Title>
+                  <Modal.Title className="text-danger">Floor Plan</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                   <div

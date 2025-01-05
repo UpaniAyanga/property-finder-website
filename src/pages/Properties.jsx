@@ -25,9 +25,14 @@ const Properties = () => {
   }, [favorites]);
 
   const handleFilter = (query) => {
-    let data = propertiesData.properties;
-    if (query?.type) {
-      data = data.filter((property) => property.type === query.type);
+    let data = properties;
+
+    if (query?.propertyType) {
+      data = data.filter(
+          (property) =>
+              property.propertyType &&
+              property.propertyType.toLowerCase() === query.propertyType.toLowerCase()
+      );
     }
 
     if (query?.maxPrice) {
@@ -44,15 +49,10 @@ const Properties = () => {
       );
     }
 
-    if (query?.propertyType) {
-      data = data.filter(
-        (property) => property.propertyType === query.propertyType
-      );
-    }
-
     if (query?.bedroom) {
       data = data.filter((property) => property.bedroom === query.bedroom);
     }
+
     if (query?.added) {
       const [queryYear, queryMonth, queryDay] = query.added
         .split("-")
@@ -60,7 +60,6 @@ const Properties = () => {
 
       data = data.filter((property) => {
         const { year, month, day } = property.added;
-
         const propertyMonth = new Date(`${month} 1, ${year}`).getMonth() + 1;
 
         return (
@@ -122,34 +121,42 @@ const Properties = () => {
               filteredProperties.map((property) => (
                 <Col key={property.id} sm={12} md={6} lg={4} className="mb-4">
                   <Card
-                    className="property-card"
-                    draggable
-                    onDragStart={(e) => handleDragStart(e, property)}
-                    style={{ cursor: "grab" }}
+                      className="property-card"
+                      draggable
+                      onDragStart={(e) => handleDragStart(e, property)}
+                      style={{cursor: "grab"}}
                   >
-                    <Card.Img variant="top" src={property.picture} />
+                    <div
+                        className="position-absolute top-0 start-0 m-2 bg-danger-subtle fw-semibold px-3 py-1 rounded"
+                        style={{zIndex: 1}}
+                    >
+                      ${property.price}
+                    </div>
+                    <Card.Img variant="top" src={property.picture}/>
                     <Card.Body>
                       <Card.Title>{property.title}</Card.Title>
-                      <Card.Text>{property.shortDescription}</Card.Text>
+                      <Card.Text>
+                        {property.shortDescription}
+                      </Card.Text>
                       <div className="d-flex align-items-center justify-content-between">
                         <Button
-                          as={Link}
-                          to={`/properties/${property.id}`}
-                          variant="outline-danger"
-                          className="mx-auto"
-                          style={{ display: "block" }}
+                            as={Link}
+                            to={`/properties/${property.id}`}
+                            variant="outline-danger"
+                            className="mx-auto"
+                            style={{display: "block"}}
                         >
                           More Details
                         </Button>
                         <Button
-                          variant="link"
-                          onClick={() => toggleFavorite(property)}
-                          className="ms-2"
+                            variant="link"
+                            onClick={() => toggleFavorite(property)}
+                            className="ms-2"
                         >
                           {isFavorite(property) ? (
-                            <FaHeart className="text-danger" size={15} />
+                              <FaHeart className="text-danger" size={15}/>
                           ) : (
-                            <FaRegHeart className="text-muted" size={15} />
+                              <FaRegHeart className="text-muted" size={15}/>
                           )}
                         </Button>
                       </div>
@@ -158,9 +165,9 @@ const Properties = () => {
                 </Col>
               ))
             ) : (
-              <Col>
-                <NoPropertiesFound />
-              </Col>
+                <Col>
+                  <NoPropertiesFound/>
+                </Col>
             )}
           </Row>
         </Col>

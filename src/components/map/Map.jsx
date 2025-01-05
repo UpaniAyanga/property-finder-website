@@ -3,7 +3,7 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "./map.css";
 import "leaflet/dist/leaflet.css";
 import Pin from "../pin/Pin";
-// import Pin from "../pin/Pin";
+
 
 function Map({ items }) {
   return (
