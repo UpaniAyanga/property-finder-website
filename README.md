@@ -2,7 +2,7 @@
 
 This is a responsive, client-side web application built with **React** and **React-Bootstrap** for browsing and searching real estate properties. It includes several interactive features such as property search, viewing property details, and managing a favorite properties list.
 
-**Responsive Design**: 
+**Site Demo**: 
 https://property-finder-website-2e7x.vercel.app/
 
 ## Features
